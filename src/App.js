@@ -36,12 +36,13 @@ export default function App() {
             <Restaurants />
           </Route>
           <Route path="/signin">
-            <SignIn />
+            
           </Route>
         </Switch>
       </div>
     </Router>
     </header>
+    <Restaurants/>
     </div>
   );
 }
