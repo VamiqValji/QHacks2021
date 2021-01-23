@@ -13,9 +13,9 @@ import {
 export default function App() {
   return (
     <div className="App">
-    <header className="App-header">
     <Router>
       <div>
+        <div className="nav">
         <nav>
           <ul>
             <li>
@@ -35,6 +35,7 @@ export default function App() {
             </li>
           </ul>
         </nav>
+        </div>
         <Switch>
           <Route path="/restaurants">
             <Restaurants />
@@ -48,7 +49,6 @@ export default function App() {
         </Switch>
       </div>
     </Router>
-    </header>
     </div>
   );
 }

@@ -9,9 +9,42 @@
   justify-content: center;
 }
 
+.App-header {
+  margin-top: 4rem;
+}
+
 .signInPage,
 .restaurantLinks {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
+}
+
+.nav nav {
+  background: black;
+  width: 100vw;
+  display: flex;
+  position: fixed;
+  margin-top: -4rem;
+}
+
+.App nav {
+  justify-content: center;
+}
+
+.nav nav li a {
+  display: inline-flex;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+.nav nav li {
+  display: inline-flex;
+  margin: 0rem 1rem 0rem 1rem;
+}
+
+.nav nav ul {
+  padding: 1rem;
+  flex-wrap: wrap;
 }
