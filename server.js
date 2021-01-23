@@ -7,6 +7,11 @@ const app = express();
 const cors = require("cors");
 const signInRoute = require("./routes/signInRoute");
 const signUpRoute = require("./routes/signUpRoute");
+// const passport = require("passport");
+// const initializePassport = require("./passport-config");
+
+// initializePassport(passport, email => {
+// });
 
 app.use(express.json());
 

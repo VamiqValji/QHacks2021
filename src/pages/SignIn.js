@@ -35,6 +35,7 @@ export default function SignIn() {
             id="PASSWORD"
             name="password"
             placeholder="Password"
+            required
           />
         </div>
         <input type="submit" />

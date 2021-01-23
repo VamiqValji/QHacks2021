@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const signIn = require("../models/signInModel");
+const bcrypt = require("bcrypt");
 
 router.get("/", (req, res) => {
   signIn
@@ -15,10 +16,15 @@ router.get("/", (req, res) => {
 router.post("/", async (req, res) => {
   let isDuplicate = await signIn.findOne({
     email: req.body.email,
-    password: req.body.password,
+    // password: req.body.password,
   });
   if (isDuplicate) {
-    console.log("authenticate user");
+    console.log("Found email.");
+    if (!bcrypt.compareSync(req.body.password, isDuplicate.password)) {
+      console.log("Incorrect password.");
+    } else {
+      console.log("Correct password.");
+    }
     // return res.status(400).json({ message: "That already exists." });
   }
 });

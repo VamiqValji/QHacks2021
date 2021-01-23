@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const signIn = require("../models/signInModel");
+const bcrypt = require("bcrypt");
 
 router.get("/", (req, res) => {
   signIn
@@ -13,23 +14,27 @@ router.get("/", (req, res) => {
 });
 
 router.post("/", async (req, res) => {
-  console.log(req.body.email);
-  console.log(req.body.password);
+  // console.log(req.body.email);
+  // console.log(req.body.password);
+
+  let hashedPass = await bcrypt.hash(req.body.password, 10); //lvl of encryption
 
   let isDuplicate = await signIn.findOne({
     email: req.body.email,
-    password: req.body.password,
+    // password: req.body.password,
   });
   if (isDuplicate) {
-    return res.status(400).json({ message: "That already exists." });
+    console.log("Duplicate email.");
+    return res.status(400).json({ message: "That email is already used." });
   }
   // else, create new item in database
   item = new signIn({
     email: req.body.email,
-    password: req.body.password,
+    password: hashedPass,
   });
   console.log(item);
   item.save();
+  console.log("Created account.");
   return res.status(201).json({ message: "Created." });
 });
 
