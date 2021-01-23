@@ -2,6 +2,8 @@ import './App.css';
 import Restaurants from "./pages/Restaurants";
 import SignIn from "./pages/SignIn";
 import SignUp from './pages/SignUp';
+import Dashboard from './pages/Dashboard';
+import Home from './pages/Home'
 
 import {
   BrowserRouter as Router,
@@ -26,6 +28,12 @@ export default function App() {
               <Link to="/about">About</Link>
             </li>
             <li>
+            <li>
+              <Link to="/Charity">Charity</Link>
+            </li>
+            <li>
+              <Link to="/Dashboard">dashboard</Link>
+            </li>
               <Link to="/restaurants">Restaurants</Link>
             </li>
             <li>
@@ -46,6 +54,13 @@ export default function App() {
           </Route>
           <Route path="/signup">
             <SignUp />
+
+          </Route>
+          <Route path="/Dashboard">
+            <Dashboard />
+          </Route>
+          <Route path="/">
+            <Home />
           </Route>
         </Switch>
       </div>

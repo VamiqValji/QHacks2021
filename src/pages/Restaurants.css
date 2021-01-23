@@ -1,27 +1,36 @@
+
+
+
 .component3 form {
-    
-    width: 300px;
-    display: flexbox ;
+    width: 500px;
+    display: flex ;
     justify-content: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
     
 
 }
-.component3, .fullName {
-    padding-left: 40%;
-    padding-top: 10%;
-    
-}
-.component3 form TextField{
-    width: 200px;
+.component3{
+    display: flex;
+    justify-content: center;
 }
 
-.restaurantName {
-    position: relative;
-   
-    width: 200px;
+
+.restaurantsignup .fullName{
+    padding-top: 40px;
+} 
+
+.restaurantsignup .fullButton{
+ width: 140px;
+ margin-top: 20px;
+ margin-left: 37%;
 }
+
+.restaurant {
+   margin-top: 40px;
+   font-size: 50px;
+}
+
 
 
 

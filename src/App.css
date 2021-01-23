@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: rgb(136, 245, 185)
 }
 
 .App nav {
@@ -10,7 +11,7 @@
 }
 
 .App-header {
-  margin-top: 4rem;
+  margin-top: 4rem;background-color: rgb(136, 245, 185);
 }
 
 .signInPage,
@@ -23,13 +24,16 @@
 .nav nav {
   background: black;
   width: 100vw;
+  height: 70px;
   display: flex;
   position: fixed;
   margin-top: -4rem;
+  z-index: 1000;
 }
 
 .App nav {
   justify-content: center;
+ 
 }
 
 .nav nav li a {
