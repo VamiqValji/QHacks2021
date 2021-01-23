@@ -13,7 +13,8 @@ router.get("/", (req, res) => {
 });
 
 router.post("/", async (req, res) => {
-  // console.log(req.body);
+  console.log(req.body.email);
+  console.log(req.body.password);
 
   let isDuplicate = await signIn.findOne({
     email: req.body.email,
@@ -27,6 +28,7 @@ router.post("/", async (req, res) => {
     email: req.body.email,
     password: req.body.password,
   });
+  console.log(item);
   item.save();
   return res.status(201).json({ message: "Created." });
 });

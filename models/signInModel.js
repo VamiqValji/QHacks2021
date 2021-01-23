@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 // create schema (like a blueprint)
 let signInSchema = new Schema({
   email: String,
-  login: String,
+  password: String,
 });
 
 let signIn = mongoose.model("signIn", signInSchema);

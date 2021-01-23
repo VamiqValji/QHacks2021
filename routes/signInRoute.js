@@ -13,7 +13,14 @@ router.get("/", (req, res) => {
 });
 
 router.post("/", async (req, res) => {
-  //
+  let isDuplicate = await signIn.findOne({
+    email: req.body.email,
+    password: req.body.password,
+  });
+  if (isDuplicate) {
+    console.log("authenticate user");
+    // return res.status(400).json({ message: "That already exists." });
+  }
 });
 
 module.exports = router;
