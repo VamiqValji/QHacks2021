@@ -1,5 +1,6 @@
 import './App.css';
-import LinksPage from "./pages/restaurantsPage";
+import Restaurants from "./pages/Restaurants";
+import SignIn from "./pages/SignIn";
 
 import {
   BrowserRouter as Router,
@@ -23,11 +24,17 @@ export default function App() {
             <li>
               <Link to="/restaurants">Restaurants</Link>
             </li>
+            <li>
+              <Link to="/signin">Sign In</Link>
+            </li>
           </ul>
         </nav>
         <Switch>
           <Route path="/restaurants">
-            <LinksPage />
+            <Restaurants />
+          </Route>
+          <Route path="/signin">
+            <SignIn />
           </Route>
           {/* <Route path="/users">
             <Users />
