@@ -1,11 +1,32 @@
 import React from "react";
+import './Restaurants.css';
+import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
 
-export default function Restaurants() {
+const Component3 = ({
+  
+}) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <div className="restaurantLinks">Links to signed up restaurants</div>
-      </header>
+    <div className="component3">
+      <form className = "restaurantsignup">
+        <h1 className ="restaurant">Restaurant Sign Up!</h1> 
+    
+        <TextField className = "fullName" id="standard-basic" label="Full Name" />
+        <TextField className = "fullName"  id="standard-basic" label="Restaurant Name" />
+        <TextField className = "fullName" id="standard-basic" label="Restaurant Postal Code" />
+        <TextField className = "fullName"  id="standard-basic" label="Address" />
+        <TextField className = "fullName"  id="standard-basic" label="Restaurant Address" />
+        <TextField cclassName = "fullName"  id="standard-basic" label="Phone Number" />
+      
+     <Button className = "fullName" variant="contained" color="primary">
+        Submit Application
+      </Button>
+      
+
+      
+      </form>
     </div>
   );
-}
+};
+
+export default Component3

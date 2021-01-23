@@ -1,0 +1,34 @@
+.component3 form {
+    
+    width: 300px;
+    display: flexbox ;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+
+}
+.component3, .fullName {
+    padding-left: 40%;
+    padding-top: 10%;
+    
+}
+.component3 form TextField{
+    width: 200px;
+}
+
+.restaurantName {
+    position: relative;
+   
+    width: 200px;
+}
+
+
+
+
+
+     
+
+    
+
+
