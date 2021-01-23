@@ -11,6 +11,8 @@ import {
 
 export default function App() {
   return (
+    <div className="App">
+    <header className="App-header">
     <Router>
       <div>
         <nav>
@@ -36,14 +38,10 @@ export default function App() {
           <Route path="/signin">
             <SignIn />
           </Route>
-          {/* <Route path="/users">
-            <Users />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route> */}
         </Switch>
       </div>
     </Router>
+    </header>
+    </div>
   );
 }
