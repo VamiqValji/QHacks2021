@@ -1,14 +1,42 @@
-import logo from './logo.svg';
 import './App.css';
+import LinksPage from "./pages/restaurantsPage";
 
-function App() {
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <div>Hello</div>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/restaurants">Restaurants</Link>
+            </li>
+          </ul>
+        </nav>
+        <Switch>
+          <Route path="/restaurants">
+            <LinksPage />
+          </Route>
+          {/* <Route path="/users">
+            <Users />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route> */}
+        </Switch>
+      </div>
+    </Router>
   );
 }
-
-export default App;
