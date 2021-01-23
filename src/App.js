@@ -1,6 +1,7 @@
 import './App.css';
 import Restaurants from "./pages/Restaurants";
 import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
 
 import {
   BrowserRouter as Router,
@@ -29,6 +30,9 @@ export default function App() {
             <li>
               <Link to="/signin">Sign In</Link>
             </li>
+            <li>
+              <Link to="/signup">Sign Up</Link>
+            </li>
           </ul>
         </nav>
         <Switch>
@@ -37,6 +41,9 @@ export default function App() {
           </Route>
           <Route path="/signin">
             <SignIn />
+          </Route>
+          <Route path="/signup">
+            <SignUp />
           </Route>
         </Switch>
       </div>

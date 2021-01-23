@@ -6,12 +6,14 @@ const app = express();
 // const request = require("request");
 const cors = require("cors");
 const signInRoute = require("./routes/signInRoute");
+const signUpRoute = require("./routes/signUpRoute");
 
 app.use(express.json());
 
 app.use(cors({}));
 
 app.use("/signin", signInRoute);
+app.use("/signup", signUpRoute);
 
 // connect to database
 port = 3001;
