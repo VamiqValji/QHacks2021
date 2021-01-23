@@ -1,14 +1,20 @@
 import React from "react";
 import "../App.css";
+import axios from "axios";
 
 export default function SignIn() {
 
   const submit = (e) => {
     e.preventDefault();
-    let email = document.getElementById("EMAIL").value;
-    let password = document.getElementById("PASSWORD").value;
-    console.log(email)
-    console.log(password)
+    let EMAIL = document.getElementById("EMAIL").value;
+    let PASSWORD = document.getElementById("PASSWORD").value;
+    axios
+      .post("http://localhost:3001/signin", {
+        email: EMAIL,
+        password: PASSWORD,
+      })
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err.response.data.message));
   }
 
   return (
