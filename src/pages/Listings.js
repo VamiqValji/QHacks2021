@@ -23,7 +23,7 @@ import '../App.css';
     getData();
   }, []);
 
-  // numbers = [["fullName", "restaurantName", "resPostalCode", "resAddress", "phoneNumber", "img"],["fullName2", "restaurantName2", "resPostalCode2", "resAddress2", "phoneNumber2", "img"]]
+  // setNumbers([["fullName", "restaurantName", "resPostalCode", "resAddress", "phoneNumber", "img"],["fullName2", "restaurantName2", "resPostalCode2", "resAddress2", "phoneNumber2", "img"]])
   console.log([["fullName", "restaurantName", "resPostalCode", "resAddress", "phoneNumber", "img"],["fullName2", "restaurantName2", "resPostalCode2", "resAddress2", "phoneNumber2", "img"]])
   const listItems = numbers.map((n) =>
     <div className="cardContainer">

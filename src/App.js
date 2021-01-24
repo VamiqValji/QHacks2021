@@ -63,7 +63,6 @@ export default function App() {
               <Route path="/signup">
                 <SignUp />
               </Route>
-
               <Route path="/Dashboard">
                 <Dashboard />
               </Route>
