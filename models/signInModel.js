@@ -5,6 +5,7 @@ const Schema = mongoose.Schema;
 let signInSchema = new Schema({
   email: String,
   password: String,
+  organization: String,
 });
 
 let signIn = mongoose.model("signIn", signInSchema);
