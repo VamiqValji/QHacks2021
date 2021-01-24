@@ -20,13 +20,21 @@
   margin-top: 1rem;
 }
 
+.nav {
+  /* display: flex;
+  justify-content: center; */
+  margin-right: 2.5vw;
+  margin-left: 2.5vw;
+}
+
 .nav nav {
   background: black;
-  width: 100vw;
+  width: 95vw;
   display: flex;
   position: fixed;
   margin-top: -4rem;
   z-index: 1000;
+  border-radius: 0rem 0rem 2rem 2rem;
 }
 
 .App nav {
@@ -61,7 +69,8 @@
   padding: 1rem;
   border-radius: 1rem;
   color: white;
-  filter: drop-shadow(0rem 0rem 1rem black);
+  background: rgba(0, 0, 0, 0.8);
+  filter: drop-shadow(0rem 0rem 0.3rem black);
   height: 375px;
   width: 30vw;
 }
@@ -78,25 +87,41 @@
 }
 
 .resnameList {
-  font-size: 3em;
+  margin-top: 0.2rem;
+  font-size: 2.5em;
   margin-left: 50%;
 }
 .nameList,
 .respostList,
 .resaddList,
 .phoneList {
-  font-size: 25px;
+  font-size: 22px;
   margin-left: 50%;
   margin-top: 1%;
 }
+.resaddList {
+  /* width: 250px; */
+  text-align: center;
+}
+/* .card img {
+  margin-top: -%;
+}  */
+.card img {
+  position: absolute;
+  display: flex;
+  transform: translate(-50%, -50%);
+  top: 100%;
+  left: 22%;
+}
 .imgList {
-  margin-top: -38%;
+  margin-top: -33%;
   margin-left: 5%;
   width: 230px;
   height: 230px;
   display: flex;
   align-items: center;
   border-radius: 1rem;
+  position: fixed;
 }
 .buttonList {
   position: relative;
@@ -106,7 +131,11 @@
   margin-left: -1rem;
 }
 .btn {
-  margin-left: 11rem;
+  position: absolute;
+  display: flex;
+  transform: translate(-50%, -50%);
+  top: 87%;
+  left: 65%;
 }
 
 #orgSelect {
@@ -116,4 +145,11 @@
   border-radius: 1rem;
   padding: 0.2rem;
   margin-top: 0.2rem;
+}
+
+#orgSelectContainer {
+  display: flex;
+  justify-content: center;
+  margin-left: -2.4rem;
+  margin-bottom: 1rem;
 }

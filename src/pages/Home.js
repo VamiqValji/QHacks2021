@@ -11,6 +11,7 @@ export default function Home() {
       <h1 className="logo-name">
         <img className = "logo" src={logo}></img>
       </h1>
+      <div id="aboutUsBelow">
       <h2 className = "aboutUs">About Us</h2>
       <div className="hello">
         <p className = "aboutusp">Restaurants make up for over 13% of the total food waste and
@@ -26,8 +27,10 @@ export default function Home() {
          <img   src = {stats}></img>
     </div>
     </div>
+    </div>
 
     </div>
+
     </div>
   );
 }

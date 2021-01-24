@@ -44,36 +44,36 @@ h2 {
 }
 
 .aboutUs {
-  margin-top: -7%;
-  font-size: 80px;
+  margin-top: -10%;
+  font-size: 70px;
 }
 .aboutusp {
   display: flex;
-  width: 800px;
+  width: 500px;
   text-align: center;
-  font-size: 23px;
+  font-size: 19px;
   margin-top: 1.5rem;
 }
 
 .stat {
   display: flex;
   justify-content: center;
-  margin-top: -35%;
-  transform: scale(0.7);
+  margin-top: -39%;
+  transform: scale(0.45);
 }
 
 .stats {
   display: flex;
   justify-content: center;
-  margin-top: -39%;
-  transform: scale(0.6);
+  margin-top: -46.5%;
+  transform: scale(0.4);
 }
 
 .logo {
   display: flex;
   width: 80%;
   height: 80%;
-  transform: scale(1.5);
+  transform: scale(1.2);
   margin-top: -21rem;
   margin-left: 5rem;
 }
