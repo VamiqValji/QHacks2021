@@ -3,6 +3,7 @@ import "./Home.css";
 import logo from "../images/FULLR.png";
 import stat from "../images/stats.png";
 import stats from "../images/stats-2.png";
+import eating from "../images/undraw_eating.png"
 
 export default function Home() {
   return (
@@ -27,6 +28,9 @@ export default function Home() {
          <img   src = {stats}></img>
     </div>
     </div>
+    </div>
+    <div className="undraw">
+      <img src={eating} style={{ width:"50%"}} alt=""/>
     </div>
 
     </div>
