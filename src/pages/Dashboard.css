@@ -50,3 +50,7 @@ html,
   margin-top: 14%;
   transform: scale(1.7);
 }
+
+.account {
+  font-size: 1.3em;
+}

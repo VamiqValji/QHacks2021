@@ -31,9 +31,9 @@ export default function App() {
                   <li>
                     <Link to="/Dashboard">Dashboard</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link to="/restaurant">Restaurant</Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link to="/signin">Sign In</Link>
                   </li>
@@ -44,9 +44,9 @@ export default function App() {
               </nav>
             </div>
             <Switch>
-              <Route path="/restaurant">
+              {/* <Route path="/restaurant">
                 <Restaurants />
-              </Route>
+              </Route> */}
               <Route path="/listings">
                 <Listings />
               </Route>
