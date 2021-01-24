@@ -49,6 +49,7 @@ const rows = [
 ];
  export default function Dashboard(){
   let user = (sessionStorage.getItem("user").split(","));
+  let recent = (sessionStorage.getItem("recent").split(","));
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
   return (
@@ -66,24 +67,26 @@ const rows = [
       <CardContent>
 
         <Typography variant="h8" component="h4">
-          Restaurant contact information:
+          Restaurant Contact Information:
         </Typography>
        
-
         <Typography variant="body2" component="p">
-          Phone number
+          Restaurant Name: {recent[0]}
         </Typography>
         <Typography variant="body2" component="p">
-          Business email 
+          Phone Number: {recent[1]}
         </Typography>
         <Typography variant="body2" component="p">
-          Address
+          Business Email: {recent[2]}
         </Typography>
         <Typography variant="body2" component="p">
-          Postal Code
+          Address: {recent[3]}
+        </Typography>
+        <Typography variant="body2" component="p">
+          Postal Code: {recent[4]}
         </Typography>
         <Typography variant="h8" component="h4">
-          Pick up time 
+          Pick Up Time: {recent[5]} 
         </Typography>
 
 

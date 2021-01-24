@@ -14,7 +14,6 @@
   background-color: rgb(136, 245, 185);
 }
 
-
 .restaurantLinks {
   display: flex;
   justify-content: center;
@@ -72,27 +71,30 @@
   justify-content: center;
 }
 
-.resnameList{
+.resnameList {
   font-size: 500%;
   margin-left: 50%;
 }
-.nameList, 
-.respostList, 
-.resaddList, 
+.nameList,
+.respostList,
+.resaddList,
 .phoneList {
   font-size: 25px;
   margin-left: 50%;
   margin-top: 1%;
 }
-.imgList{
+.imgList {
   margin-top: -15%;
   margin-left: 5%;
   width: 230px;
   max-width: 230px;
 }
-.buttonList{
+.buttonList {
   position: relative;
   left: 50%;
   top: 8%;
 }
 
+.buttonList {
+  z-index: 3;
+}
