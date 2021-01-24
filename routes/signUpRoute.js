@@ -16,7 +16,7 @@ router.get("/", (req, res) => {
 router.post("/", async (req, res) => {
   // console.log(req.body.email);
   // console.log(req.body.password);
-
+  console.log(req.body);
   let hashedPass = await bcrypt.hash(req.body.password, 10); //lvl of encryption
 
   let isDuplicate = await signIn.findOne({
@@ -31,6 +31,7 @@ router.post("/", async (req, res) => {
   item = new signIn({
     email: req.body.email,
     password: hashedPass,
+    organization: req.body.organization,
   });
   console.log(item);
   item.save();

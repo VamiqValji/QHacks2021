@@ -7,13 +7,16 @@ export default function SignUp() {
     e.preventDefault();
     let EMAIL = document.getElementById("EMAIL").value;
     let PASSWORD = document.getElementById("PASSWORD").value;
+    let ORG = document.getElementById("orgSelect").value;
     console.log(EMAIL);
     console.log(PASSWORD);
+    console.log(ORG);
 
     axios
       .post("http://localhost:3001/signup", {
         email: EMAIL,
         password: PASSWORD,
+        organization: ORG,
       })
       .then((res) => console.log(res))
       .catch((err) => console.log(err.response.data.message));
@@ -45,6 +48,14 @@ export default function SignUp() {
               placeholder="Password"
               required
             />
+          </div>
+          <div id="orgSelectContainer">
+            <select id="orgSelect">
+              <option value="Restaurant">Restaurant</option>
+              <option value="Charity" selected>
+                Charity
+              </option>
+            </select>
           </div>
           <input type="submit" />
         </form>
