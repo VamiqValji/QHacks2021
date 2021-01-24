@@ -5,7 +5,7 @@ import SignIn from "./pages/SignIn";
 import SignUp from './pages/SignUp';
 import Dashboard from './pages/Dashboard';
 import Home from './pages/Home'
-// import UserContext from "./pages/SignIn";
+import Charity from './pages/Charity'
 
 
 import {
@@ -39,7 +39,7 @@ export default function App() {
               <Link to="/Charity">Charity</Link>
             </li>
             <li>
-              <Link to="/Dashboard">dashboard</Link>
+              <Link to="/Dashboard">Dashboard</Link>
             </li>
               <Link to="/restaurants">Restaurants</Link>
             </li>
@@ -56,6 +56,9 @@ export default function App() {
         <Switch>
           <Route path="/restaurants">
             <Restaurants />
+          </Route>
+          <Route path="/Charity">
+            <Charity />
           </Route>
           <Route path="/signin">
             <SignIn />
