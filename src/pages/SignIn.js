@@ -1,13 +1,11 @@
 import React, {useContext} from "react";
 import "../App.css";
-import "./Signin.css";
+// import "./Signin.css";
 import axios from "axios";
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 
 export default function SignIn() {
-  // export const organization = 
-
   const submit = (e) => {
     e.preventDefault();
     let EMAIL = document.getElementById("EMAIL").value;
@@ -15,7 +13,7 @@ export default function SignIn() {
     axios
       .post("http://localhost:3001/signin", {
         email: EMAIL,
-        opassword: PASSWORD,
+        password: PASSWORD,
       })
       .then((res) => console.log(res))
       .catch((err) => console.log(err.response.data.message));
@@ -34,6 +32,10 @@ export default function SignIn() {
       data.forEach(profile => {
         if (profile.email === EMAIL) {
           console.log("logged in")
+          console.log(profile)
+          console.log(profile.email)
+          console.log(profile.organization)
+          sessionStorage.setItem("user",[profile.email, profile.organization, profile._id])
         }
       });
   };

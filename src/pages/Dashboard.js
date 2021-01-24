@@ -54,6 +54,7 @@ const rows = [
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
   return (
+  <div className="containingContainer">
   <div className="container">
  <div className="flex-box-dashboard">
  <h1 className = "dashboardName">Dash Board</h1>
@@ -121,6 +122,6 @@ const rows = [
     </TableContainer>
 </div>
 </div>
-    
+</div>
   );
 };

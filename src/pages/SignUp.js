@@ -1,7 +1,7 @@
 import React from "react";
-import "../App.css";
+// import "../App.css";
 import axios from "axios";
-import './Signin.css'
+// import './Signin.css'
 
 export default function SignUp() {
   const submit = (e) => {

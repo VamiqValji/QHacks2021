@@ -6,7 +6,6 @@ import Dashboard from "./pages/Dashboard";
 import Home from "./pages/Home";
 import Listings from "./pages/Listings";
 import CreateListing from "./pages/CreateListing";
-// import Charity from './pages/Charity';
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
@@ -63,7 +62,6 @@ export default function App() {
               <Route path="/signup">
                 <SignUp />
               </Route>
-
               <Route path="/Dashboard">
                 <Dashboard />
               </Route>
@@ -77,4 +75,3 @@ export default function App() {
     </div>
   );
 }
-
