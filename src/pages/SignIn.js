@@ -32,6 +32,10 @@ export default function SignIn() {
       data.forEach(profile => {
         if (profile.email === EMAIL) {
           console.log("logged in")
+          console.log(profile)
+          console.log(profile.email)
+          console.log(profile.organization)
+          sessionStorage.setItem("user",[profile.email, profile.organization, profile._id])
         }
       });
   };
