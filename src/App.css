@@ -62,7 +62,7 @@
   border-radius: 1rem;
   color: white;
   filter: drop-shadow(0rem 0rem 1rem black);
-  height: 300px;
+  height: 375px;
 }
 
 .nothingHere {
@@ -73,14 +73,26 @@
 }
 
 .resnameList{
-  font-size: 70px;
-  margin-left: 60%;
+  font-size: 500%;
+  margin-left: 50%;
 }
 .nameList, 
 .respostList, 
 .resaddList, 
-.phoneList{
+.phoneList {
   font-size: 25px;
-  margin-left: 60%;
+  margin-left: 50%;
   margin-top: 1%;
 }
+.imgList{
+  margin-top: -15%;
+  margin-left: 5%;
+  width: 230px;
+  max-width: 230px;
+}
+.buttonList{
+  position: relative;
+  left: 50%;
+  top: 8%;
+}
+

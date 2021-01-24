@@ -47,8 +47,6 @@ const rows = [
   createData('Swiss Chalet', 'Febuary 12, 2019', 3.7, '(647)-252-8181', 'swisschalet@gmail.com'),
   createData('White oaks','January 15, 2019', 16.0, '(647)-219-4320', 'whiteoaks@hdsb.ca'),
 ];
-
-
  export default function Dashboard(){
   let user = (sessionStorage.getItem("user").split(","));
   const classes = useStyles();
@@ -59,10 +57,11 @@ const rows = [
  <div className="flex-box-dashboard">
  <h1 className = "dashboardName">Dash Board</h1>
  <div className="account">{user[1]} Account</div>
+ <Avatar className = "avatar" alt="Remy Sharp" src="/static/images/avatar/1.jpg" /> 
 
  <h2 className = "activeorder">Active Order(s):</h2>
 
- <Avatar className = "avatar" alt="Remy Sharp" src="/static/images/avatar/1.jpg" /> 
+ 
  <Card id = "card" className={classes.root}>
       <CardContent>
 
