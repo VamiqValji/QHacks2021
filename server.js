@@ -7,6 +7,7 @@ const app = express();
 const cors = require("cors");
 const signInRoute = require("./routes/signInRoute");
 const signUpRoute = require("./routes/signUpRoute");
+const listingRoute = require("./routes/listingRoute");
 // const passport = require("passport");
 // const initializePassport = require("./passport-config");
 
@@ -19,6 +20,7 @@ app.use(cors({}));
 
 app.use("/signin", signInRoute);
 app.use("/signup", signUpRoute);
+app.use("/createListing", listingRoute);
 
 // connect to database
 port = 3001;

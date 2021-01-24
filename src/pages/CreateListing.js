@@ -2,24 +2,30 @@ import React from "react";
 import "./Restaurants.css";
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
+import axios from "axios";
 
 export default function CreateListing() {
   const submit = (e) => {
     e.preventDefault();
 
-    let fullName = document.getElementById("fullName").value;
-    let restaurantName = document.getElementById("restaurantName").value;
-    let resPostalCode = document.getElementById("resPostalCode").value;
-    let resAddress = document.getElementById("resAddress").value;
-    let phoneNumber = document.getElementById("phoneNumber").value;
-    let image = document.getElementById("img").value;
+    let fn = document.getElementById("fullName").value;
+    let rn = document.getElementById("restaurantName").value;
+    let rpc = document.getElementById("resPostalCode").value;
+    let ra = document.getElementById("resAddress").value;
+    let pn = document.getElementById("phoneNumber").value;
+    let img = document.getElementById("img").value;
 
-    console.log(fullName);
-    console.log(restaurantName);
-    console.log(resPostalCode);
-    console.log(resAddress);
-    console.log(phoneNumber);
-    console.log(image);
+    axios
+      .post("http://localhost:3001/createListing", {
+        fullName: fn,
+        resName: rn,
+        resPostalCode: rpc,
+        resAddress: ra,
+        phoneNumber: pn,
+        image: img,
+      })
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err.response.data.message));
   };
 
   return (
