@@ -13,6 +13,25 @@ import {
 } from "react-router-dom";
 
 export default function App() {
+
+  let data = [];
+  const getData = async () => {
+    try {
+      const res = await fetch("http://localhost:3001/signin/logged");
+      data = await res.json();
+      console.log(data);
+    } catch(err) {
+      console.log(err)
+    }
+    if (data.length > 0) {
+      console.log("logged in")
+    } else {
+      console.log("not logged in")
+    }
+  };
+
+  getData();
+
   return (
     <div className="App">
     <header className="App-header">
