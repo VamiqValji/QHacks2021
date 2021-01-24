@@ -1,6 +1,7 @@
 import React from "react";
 import '../App.css';
-// import Button from '@material-ui/core/Button';
+
+ import Button from '@material-ui/core/Button';
 // import TextField from '@material-ui/core/TextField';
   
  export default function Listings(){
@@ -20,6 +21,9 @@ import '../App.css';
   return (
     <div className="App">
         <h1 className ="restaurant">Listings</h1> 
+        <Button variant="contained" color="primary">
+        Add Listing
+        </Button>
         <div>{listItems}</div>
     </div>
   );

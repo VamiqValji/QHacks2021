@@ -4,7 +4,8 @@ import SignIn from "./pages/SignIn";
 import SignUp from './pages/SignUp';
 import Dashboard from './pages/Dashboard';
 import Home from './pages/Home'
-import Charity from './pages/Charity';
+import Listings from './pages/Listings'
+
 
 
 
@@ -31,7 +32,7 @@ export default function App() {
             </li>
             <li>
             <li>
-              <Link to="/Charity">Charity</Link>
+              <Link to="/Listings">Listings</Link>
             </li>
             <li>
               <Link to="/Dashboard">Dashboard</Link>
@@ -52,14 +53,15 @@ export default function App() {
           <Route path="/restaurant">
             <Restaurants />
           </Route>
-          <Route path="/Charity">
-            <Charity />
-          </Route>
           <Route path="/signin">
             <SignIn />
           </Route>
           <Route path="/signup">
             <SignUp />
+
+          </Route>
+          <Route path="/Listings">
+            <Listings />
 
           </Route>
 
