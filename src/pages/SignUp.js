@@ -1,7 +1,9 @@
 import React from "react";
 import "../App.css";
 import axios from "axios";
-// import './Signin.css'
+ import './Signin.css';
+ import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
 
 export default function SignUp() {
   const submit = (e) => {
@@ -24,31 +26,20 @@ export default function SignUp() {
   };
 
   return (
-    <div className="App">
+    <div className="signinn">
       <header className="App-header">
         <div className="signInPage">Sign Up</div>
+        <div className = "div">
         <form onSubmit={submit} className="form">
           <div className="input">
-            <label for="Email">Email:</label>
+            <label className= "labels" for="Email">Email:</label>
             <br />
-            <input
-              type="text"
-              id="EMAIL"
-              name="email"
-              placeholder="Email"
-              required
-            />
+             <TextField  className = "email" id="EMAIL" label="Email" name = "email" required/>
           </div>
           <div className="Password">
-            <label for="password">Password</label>
+            <label className= "labels" for="password">Password</label>
             <br />
-            <input
-              type="text"
-              id="PASSWORD"
-              name="password"
-              placeholder="Password"
-              required
-            />
+           <TextField className = "password"  id="PASSWORD" label="Password" name = "password" required />
           </div>
           <div id="orgSelectContainer">
             <select id="orgSelect">
@@ -58,8 +49,13 @@ export default function SignUp() {
               </option>
             </select>
           </div>
-          <input type="submit" />
+          <div className = "elly">
+          <Button type = "submit" className = "fullButton"  variant="contained" color="primary">
+         Sign Up
+      </Button>
+      </div>
         </form>
+        </div>
       </header>
     </div>
   );

@@ -95,8 +95,8 @@ const rows = [
         <Button size="small">Your pickup/order status</Button>
       </CardActions>
     </Card>
-      
       <h2 className = "recentorders">Recent Order(s):</h2>
+      
     <TableContainer className = "hello" component={Paper}>
       <Table className={classes.table} aria-label="simple table">
         <TableHead>
@@ -123,6 +123,7 @@ const rows = [
         </TableBody>
       </Table>
     </TableContainer>
+  
 </div>
 </div>
 </div>
