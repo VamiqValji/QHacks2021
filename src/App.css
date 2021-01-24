@@ -23,7 +23,6 @@
 .nav nav {
   background: black;
   width: 100vw;
-  height: px;
   display: flex;
   position: fixed;
   margin-top: -4rem;
@@ -52,6 +51,8 @@
 }
 
 .App .cardContainer {
+  display: inline-flex;
+  justify-content: center;
 }
 
 .App .card {
@@ -62,6 +63,11 @@
   color: white;
   filter: drop-shadow(0rem 0rem 1rem black);
   height: 375px;
+  width: 30vw;
+}
+
+.App .card:first-child {
+  margin-left: 2.5rem;
 }
 
 .nothingHere {
@@ -84,7 +90,7 @@
   margin-top: 1%;
 }
 .imgList {
-  margin-top: -14%;
+  margin-top: -38%;
   margin-left: 5%;
   width: 230px;
   height: 230px;
@@ -96,8 +102,18 @@
   position: relative;
   left: 50%;
   top: 8%;
+  z-index: 11;
+  margin-left: -1rem;
+}
+.btn {
+  margin-left: 11rem;
 }
 
-.buttonList {
-  z-index: 3;
+#orgSelect {
+  background: black;
+  border: none;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.2rem;
+  margin-top: 0.2rem;
 }

@@ -18,11 +18,13 @@ export default function Home() {
            can give with those in need through a simple automated platform. Charities are able to contact restaurants
             and pick up the extra food or groceries they have available. </p>  
       </div>
+      <div className="STATS">
       <div className = "stat">
          <img   src = {stat}></img>
     </div>
     <div className = "stats">
          <img   src = {stats}></img>
+    </div>
     </div>
 
     </div>
