@@ -1,37 +1,63 @@
-.signinn{
- display: flex;
- justify-content:center;
+.signinn {
+  display: flex;
+  justify-content: center;
 }
-.labels{
-font-size: 17px;
-
+.labels {
+  font-size: 17px;
 }
-.signInPage{
-
+.signInPage {
   font-size: 120px;
 }
-.form{
+.form {
   transform: scale(2);
   justify-content: left;
-  bottom : 90%;
+  bottom: 90%;
   margin-bottom: -5%;
-
 }
-.email{
-  width: 300px; 
+.email {
+  width: 300px;
 }
-.password{
-  width: 300px; 
-top: -5px;
+.password {
+  width: 300px;
+  top: -5px;
 }
-.div{
-    bottom: 20%;
-    margin-top: 40%;
-    margin-left: 15%;
+.div {
+  bottom: 20%;
+  margin-top: 40%;
+  margin-left: 15%;
 }
-.elly{
-
+.elly {
   width: 150px;
   margin-left: 30%;
   transform: scale(0.75);
+}
+.success,
+.success1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 2rem 3rem 0rem 0rem;
+  margin-left: -2.5rem;
+  background: rgba(255, 255, 255, 0.3);
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 10rem;
+}
+
+.success1 {
+  margin-left: -2.1rem;
+}
+
+.fail {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 2rem 3rem 0rem 0rem;
+  margin-left: -2.5rem;
+  background: rgba(189, 28, 28, 0.6);
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 10rem;
 }
