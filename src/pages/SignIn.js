@@ -37,6 +37,9 @@ export default function SignIn() {
         }
       });
   };
+  // useEffect(() => {
+  //   getData();
+  // }, []);
   getData();
 
   }
