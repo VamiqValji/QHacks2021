@@ -6,8 +6,6 @@ import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 
 export default function SignIn() {
-  // export const organization = 
-
   const submit = (e) => {
     e.preventDefault();
     let EMAIL = document.getElementById("EMAIL").value;

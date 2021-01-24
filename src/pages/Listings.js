@@ -28,23 +28,28 @@ import Button from '@material-ui/core/Button';
   const listItems = numbers.map((n) =>
     <div className="cardContainer">
       <div className="card">
-        <h1 key={n[0]}>{n[0]}</h1>
-        <h1 key={n[1]}>{n[1]}</h1>
-        <h1 key={n[2]}>{n[2]}</h1>
-        <h1 key={n[3]}>{n[3]}</h1>
-        <h1 key={n[4]}>{n[4]}</h1>
-        <h1 key={n[5]}>{n[5]}</h1>
+       <h1 className = "resnameList" key={n[1]}>{n[1]}</h1>
+        <h1 className = "nameList" key={n[0]}>{n[0]}</h1>
+        <h1 className = "respostList" key={n[2]}>{n[2]}</h1>
+        <h1 className = "resaddList" key={n[3]}>{n[3]}</h1>
+        <h1 className = "phoneList" key={n[4]}>{n[4]}</h1>
+        <h1 className = "imgList" key={n[5]}>{n[5]}</h1>
       </div>
     </div>
   );
+
+  const nothingHere = <div className="nothingHere">Nothing here yet!</div>
+  
   return (
     <div className="App">
         <h1 className ="restaurant">Listings</h1> 
-        <Button variant="contained" color="primary">
-        Add Listing
+        <Button className = "addListing" variant="contained" color="primary">
+         ADD LISTING
         </Button>
-        <div>{listItems}</div>
+        <div>{numbers.length < 1 ? nothingHere : listItems}</div>
+        
     </div>
+    
   );
 };
 

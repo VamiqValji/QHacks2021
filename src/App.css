@@ -62,6 +62,7 @@
   border-radius: 1rem;
   color: white;
   filter: drop-shadow(0rem 0rem 1rem black);
+  height: 300px;
 }
 
 .nothingHere {
@@ -69,4 +70,17 @@
   font-size: 1.5em;
   display: flex;
   justify-content: center;
+}
+
+.resnameList{
+  font-size: 70px;
+  margin-left: 60%;
+}
+.nameList, 
+.respostList, 
+.resaddList, 
+.phoneList{
+  font-size: 25px;
+  margin-left: 60%;
+  margin-top: 1%;
 }
