@@ -58,10 +58,11 @@ const rows = [
   <div className="container">
  <div className="flex-box-dashboard">
  <h1 className = "dashboardName">Dash Board</h1>
+ <Avatar className = "avatar" alt="Remy Sharp" src="/static/images/avatar/1.jpg" /> 
 
  <h2 className = "activeorder">Active Order(s):</h2>
 
- <Avatar className = "avatar" alt="Remy Sharp" src="/static/images/avatar/1.jpg" /> 
+ 
  <Card id = "card" className={classes.root}>
       <CardContent>
 
