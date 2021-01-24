@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
 }
 
 .App nav {
@@ -11,7 +10,8 @@
 }
 
 .App-header {
-  margin-top: 4rem;background-color: rgb(136, 245, 185);
+  margin-top: 4rem;
+  background-color: rgb(136, 245, 185);
 }
 
 .signInPage,
@@ -33,7 +33,6 @@
 
 .App nav {
   justify-content: center;
- 
 }
 
 .nav nav li a {
@@ -51,4 +50,19 @@
 .nav nav ul {
   padding: 1rem;
   flex-wrap: wrap;
+}
+
+.App .cardContainer {
+}
+
+.App .card {
+  background: rgba(0, 0, 0, 0.4);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: white;
+  filter: drop-shadow(0rem 0rem 1rem black);
+}
+
+.App .cardContainer {
 }
