@@ -50,7 +50,7 @@ const rows = [
 
 
  export default function Dashboard(){
-  
+  let user = (sessionStorage.getItem("user").split(","));
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
   return (
@@ -58,6 +58,7 @@ const rows = [
   <div className="container">
  <div className="flex-box-dashboard">
  <h1 className = "dashboardName">Dash Board</h1>
+ <div className="account">{user[1]} Account</div>
 
  <h2 className = "activeorder">Active Order(s):</h2>
 
