@@ -1,6 +1,6 @@
 import React, {useContext} from "react";
 import "../App.css";
-import "./Signin.css";
+// import "./Signin.css";
 import axios from "axios";
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
@@ -15,7 +15,7 @@ export default function SignIn() {
     axios
       .post("http://localhost:3001/signin", {
         email: EMAIL,
-        opassword: PASSWORD,
+        password: PASSWORD,
       })
       .then((res) => console.log(res))
       .catch((err) => console.log(err.response.data.message));

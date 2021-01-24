@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import '../App.css';
-// import Button from '@material-ui/core/Button';
+import Button from '@material-ui/core/Button';
 // import TextField from '@material-ui/core/TextField';
   
  export default function Listings(){
@@ -37,13 +37,13 @@ import '../App.css';
       </div>
     </div>
   );
-
-  const nothingHere = <div className="nothingHere">Nothing here yet!</div>
-  
   return (
     <div className="App">
         <h1 className ="restaurant">Listings</h1> 
-        <div>{numbers.length < 1 ? nothingHere : listItems}</div>
+        <Button variant="contained" color="primary">
+        Add Listing
+        </Button>
+        <div>{listItems}</div>
     </div>
   );
 };

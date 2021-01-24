@@ -57,6 +57,9 @@ router.post("/", async (req, res) => {
   });
   if (isDuplicate) {
     console.log("Found email.");
+    console.log(isDuplicate);
+    console.log(req.body.password);
+    console.log(isDuplicate.password);
     if (!bcrypt.compareSync(req.body.password, isDuplicate.password)) {
       console.log("Incorrect password.");
     } else {
