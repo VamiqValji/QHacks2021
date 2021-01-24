@@ -14,9 +14,10 @@ router.get("/", (req, res) => {
     });
 });
 
-const loginUser = async (EMAIL) => {
+const loginUser = async (EMAIL, ORGANIZATION) => {
   let exists;
   console.log(EMAIL);
+  console.log(`ORGORGORG${ORGANIZATION}`);
   exists = await loggedIn.findOne({
     email: EMAIL,
   });
@@ -24,6 +25,7 @@ const loginUser = async (EMAIL) => {
   if (!exists) {
     let item = new loggedIn({
       email: EMAIL,
+      organization: ORGANIZATION,
     });
     console.log(item);
     item.save();
@@ -59,7 +61,7 @@ router.post("/", async (req, res) => {
       console.log("Incorrect password.");
     } else {
       console.log("Correct password.");
-      loginUser(req.body.email);
+      loginUser(req.body.email, isDuplicate.organization);
     }
     // return res.status(400).json({ message: "That already exists." });
   }
