@@ -71,19 +71,19 @@ const rows = [
         </Typography>
        
         <Typography variant="body2" component="p">
-          Restaurant Name: {recent[0]}
+          Owner Name: {recent[0]}
         </Typography>
         <Typography variant="body2" component="p">
-          Phone Number: {recent[1]}
+          Restaurant Name: {recent[1]}
         </Typography>
         <Typography variant="body2" component="p">
-          Business Email: {recent[2]}
+          Postal Code: {recent[2]}
         </Typography>
         <Typography variant="body2" component="p">
           Address: {recent[3]}
         </Typography>
         <Typography variant="body2" component="p">
-          Postal Code: {recent[4]}
+          Phone Number: {recent[4]}
         </Typography>
         <Typography variant="h8" component="h4">
           Pick Up Time: {recent[5]} 
@@ -96,7 +96,7 @@ const rows = [
       </CardActions>
     </Card>
       <h2 className = "recentorders">Recent Order(s):</h2>
-      
+    <div className="table">
     <TableContainer className = "hello" component={Paper}>
       <Table className={classes.table} aria-label="simple table">
         <TableHead>
@@ -123,7 +123,7 @@ const rows = [
         </TableBody>
       </Table>
     </TableContainer>
-  
+    </div>
 </div>
 </div>
 </div>

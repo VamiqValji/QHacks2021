@@ -16,7 +16,7 @@ import '../App.css';
     let nums = [];
     data.forEach(l => {
       // nums.push(l)
-      nums.push([l.fullName,l.resName,l.resPostalCode,l.resAddress,l.resName, l.resPostalCode])
+      nums.push([l.fullName,l.resName,l.resPostalCode,l.resAddress,l.phoneNumber, l.image])
     });
     setNumbers(nums)
     console.log(numbers)

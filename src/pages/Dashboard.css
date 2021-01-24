@@ -21,7 +21,6 @@ html,
   transform: scale(1.7);
 }
 
-
 .avatar {
   left: 45%;
   margin-top: 30%;
@@ -36,8 +35,11 @@ html,
   display: flex;
   justify-content: center;
   font-size: 70px;
-  margin-top: 50%;
+  margin-top: 25%;
   z-index: 1000;
+}
+.table {
+  margin-top: 20%;
 }
 .activeorder {
   display: flex;
