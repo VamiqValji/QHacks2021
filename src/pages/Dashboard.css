@@ -1,16 +1,19 @@
-
-.hello{
-    margin-top: 10%;
-    margin-bottom: 10%;
-    transform: scale(0.95);
-   
+html,
+.App,
+.container {
+  background: rgb(136, 245, 185);
 }
- .avatar{
-     left: 80%;
-    margin-top: 10%;
-     transform: scale(7);
- }
- .flex-box-dashboard h1{
-     font-size: 100px;
-     margin-left: 15%;
- }
+.hello {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  transform: scale(0.95);
+}
+.avatar {
+  left: 80%;
+  margin-top: 10%;
+  transform: scale(7);
+}
+.flex-box-dashboard h1 {
+  font-size: 100px;
+  margin-left: 15%;
+}
