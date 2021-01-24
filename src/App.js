@@ -4,7 +4,8 @@ import SignIn from "./pages/SignIn";
 import SignUp from './pages/SignUp';
 import Dashboard from './pages/Dashboard';
 import Home from './pages/Home'
-import Charity from './pages/Charity'
+import Charity from './pages/Charity';
+
 
 
 import {
@@ -18,7 +19,8 @@ export default function App() {
 
   return (
     <div className="App">
-    <header className="App-header">
+    <header className="App-header">  
+    <div className = "signInPage"></div>
     <Router>
       <div>
         <div className="nav">
@@ -28,16 +30,13 @@ export default function App() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
             <li>
               <Link to="/Charity">Charity</Link>
             </li>
             <li>
               <Link to="/Dashboard">Dashboard</Link>
             </li>
-              <Link to="/restaurants">Restaurants</Link>
+              <Link to="/restaurant">Restaurant</Link>
             </li>
             <li>
               <Link to="/signin">Sign In</Link>
@@ -45,11 +44,12 @@ export default function App() {
             <li>
               <Link to="/signup">Sign Up</Link>
             </li>
+          
           </ul>
         </nav>
         </div>
         <Switch>
-          <Route path="/restaurants">
+          <Route path="/restaurant">
             <Restaurants />
           </Route>
           <Route path="/Charity">
@@ -62,6 +62,7 @@ export default function App() {
             <SignUp />
 
           </Route>
+
           <Route path="/Dashboard">
             <Dashboard />
           </Route>
