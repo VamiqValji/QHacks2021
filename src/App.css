@@ -2,7 +2,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: rgb(136, 245, 185)
+}
+
+html,
+.App {
+  background: rgb(136, 245, 185);
 }
 
 .App nav {
@@ -11,29 +15,26 @@
 }
 
 .App-header {
-  margin-top: 4rem;background-color: rgb(136, 245, 185);
+  margin-top: 5rem;
 }
 
 .signInPage,
 .restaurantLinks {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
 }
 
 .nav nav {
   background: black;
   width: 100vw;
-  height: 70px;
   display: flex;
   position: fixed;
-  margin-top: -4rem;
-  z-index: 1000;
+  margin-top: -5rem;
+  z-index: 10;
 }
 
 .App nav {
   justify-content: center;
- 
 }
 
 .nav nav li a {
@@ -49,6 +50,6 @@
 }
 
 .nav nav ul {
-  padding: 1rem;
+  padding: 1.5rem;
   flex-wrap: wrap;
 }
