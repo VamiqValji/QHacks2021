@@ -15,6 +15,26 @@ export default function SignIn() {
       })
       .then((res) => console.log(res))
       .catch((err) => console.log(err.response.data.message));
+
+    let data = [];
+    const getData = async () => {
+      try {
+        const res = await fetch("http://localhost:3001/signin/logged");
+        data = await res.json();
+        console.log(data);
+      } catch(err) {
+        console.log(err)
+      }
+      console.log(data)
+      console.log(EMAIL)
+      data.forEach(profile => {
+        if (profile.email === EMAIL) {
+          console.log("logged in")
+        }
+      });
+  };
+  getData();
+
   }
 
   return (
