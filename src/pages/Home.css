@@ -1,6 +1,11 @@
 html {
   background: rgb(136, 245, 185);
 }
+.App{
+   
+    height: 1000px;
+  
+}
 
 h1 {
   display: flex;
@@ -27,7 +32,7 @@ h2 {
     margin-bottom: 16px;
 }
   
-.signup{
+.signup {
     outline: 0;
     padding: 8px;
     margin: 8px 0;
@@ -40,14 +45,39 @@ h2 {
     text-decoration: none;
 }
 
-.paragraph{
-    
+.aboutUs{
+    margin-top: 4%;
+    font-size: 90px;
+}
+.aboutusp{
+    display: flex;
+    width: 1100px;
+    text-align:center;
+    font-size: 35px;
+}
+  
+.stat{
+    display: flex;
+    justify-content: center;
+    margin-top: -20%;
+   
+}
+  
+.stats{
+    display: flex;
+    justify-content: center;
+    margin-top: -35%;
+    transform: scale(0.8);
+   
 }
 
-.logo-name img {
+
+
+.logo {
   display: flex;
   width: 80%;
   height: 80%;
-  margin-top: -20rem;
+  transform: scale(2.5);
+  margin-top: -17rem;
   margin-left: 5rem;
 }

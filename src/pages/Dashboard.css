@@ -15,7 +15,6 @@ html,
   transform: scale(7);
 }
 .flex-box-dashboard h1 {
-    
     display: flex;
     justify-content: right;
     font-size: 120px;   
