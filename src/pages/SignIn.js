@@ -1,9 +1,11 @@
-import React, {useContext} from "react";
+import React, { useState } from "react"; // createContext
 import "../App.css";
 import axios from "axios";
 
+// export const UserContext = React.createContext(["email", "org"]);
+
 export default function SignIn() {
-  // export const organization = 
+  const [user, setUser] = useState(["email", "org", "id"]);
 
   const submit = (e) => {
     e.preventDefault();
@@ -31,6 +33,12 @@ export default function SignIn() {
       data.forEach(profile => {
         if (profile.email === EMAIL) {
           console.log("logged in")
+          console.log(profile)
+          console.log(profile.email)
+          console.log(profile.organization)
+          setUser([profile.email, profile.organization, profile._id])
+          sessionStorage.setItem("user",[profile.email, profile.organization, profile._id])
+          console.log(user);
         }
       });
   };
@@ -39,6 +47,7 @@ export default function SignIn() {
   }
 
   return (
+    // <UserContext.Provider value={user}>
     <div className="App">
       <header className="App-header">
         <div className="signInPage">Sign In</div>
@@ -63,5 +72,6 @@ export default function SignIn() {
       </form>
       </header>
     </div>
+    // </UserContext.Provider>
   );
 }
