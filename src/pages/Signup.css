@@ -1,0 +1,37 @@
+.signinn{
+    display: flex;
+    justify-content:center;
+   }
+   .labels{
+   font-size: 17px;
+   
+   }
+   .signInPage{
+   
+     font-size: 120px;
+   }
+   .form{
+     transform: scale(2);
+     justify-content: left;
+     bottom : 90%;
+     margin-bottom: -5%;
+   
+   }
+   .email{
+     width: 300px; 
+   }
+   .password{
+     width: 300px; 
+   top: -5px;
+   }
+   .div{
+       bottom: 20%;
+       margin-top: 40%;
+       margin-left: 15%;
+   }
+   .elly{
+   
+     width: 150px;
+     margin-left: 30%;
+     transform: scale(0.75);
+   }
