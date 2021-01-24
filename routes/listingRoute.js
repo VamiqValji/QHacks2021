@@ -21,6 +21,7 @@ router.post("/", async (req, res) => {
     resPostalCode: req.body.resPostalCode,
     resAddress: req.body.resAddress,
     phoneNumber: req.body.phoneNumber,
+    pickUpTime: req.body.pickUpTime,
     image: req.body.image,
   });
   if (isDuplicate) {
@@ -36,6 +37,7 @@ router.post("/", async (req, res) => {
     resPostalCode: req.body.resPostalCode,
     resAddress: req.body.resAddress,
     phoneNumber: req.body.phoneNumber,
+    pickUpTime: req.body.pickUpTime,
     image: req.body.image,
   });
   console.log(item);

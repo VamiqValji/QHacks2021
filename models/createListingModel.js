@@ -8,6 +8,7 @@ let listingSchema = new Schema({
   resPostalCode: String,
   resAddress: String,
   phoneNumber: String,
+  pickUpTime: String,
   image: String,
 });
 

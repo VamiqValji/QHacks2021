@@ -72,7 +72,7 @@
 }
 
 .resnameList {
-  font-size: 500%;
+  font-size: 3em;
   margin-left: 50%;
 }
 .nameList,
@@ -84,10 +84,13 @@
   margin-top: 1%;
 }
 .imgList {
-  margin-top: -15%;
+  margin-top: -14%;
   margin-left: 5%;
   width: 230px;
-  max-width: 230px;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
 }
 .buttonList {
   position: relative;

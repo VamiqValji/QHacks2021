@@ -16,7 +16,7 @@ import '../App.css';
     let nums = [];
     data.forEach(l => {
       // nums.push(l)
-      nums.push([l.fullName,l.resName,l.resPostalCode,l.resAddress,l.phoneNumber, l.image])
+      nums.push([l.fullName,l.resName,l.resPostalCode,l.resAddress,l.phoneNumber, l.pickUpTime, l.image])
     });
     setNumbers(nums)
     console.log(numbers)
@@ -41,8 +41,9 @@ import '../App.css';
         <h1 className = "respostList" key={Math.random(0,1000)}>{n[2]}</h1>
         <h1 className = "resaddList" key={Math.random(0,1000)}>{n[3]}</h1>
         <h1 className = "phoneList" key={Math.random(0,1000)}>{n[4]}</h1>
-        <img className = "imgList" src={Math.random(0,1000)}></img>
-        <Button onClick={() => addToDash(n)} className = "buttonList" variant="contained" color="primary">
+        <h1 className = "phoneList" key={Math.random(0,1000)}>{n[5]}</h1>
+        <img className = "imgList" key={Math.random(0,1000)} src={n[6]}></img>
+        <Button size="large" onClick={() => addToDash(n)} className = "buttonList" variant="contained" color="primary">
          Order
         </Button>
 

@@ -13,6 +13,7 @@ export default function CreateListing() {
     let rpc = document.getElementById("resPostalCode").value;
     let ra = document.getElementById("resAddress").value;
     let pn = document.getElementById("phoneNumber").value;
+    let pu = document.getElementById("pu").value;
     let img = document.getElementById("img").value;
 
     axios
@@ -22,6 +23,7 @@ export default function CreateListing() {
         resPostalCode: rpc,
         resAddress: ra,
         phoneNumber: pn,
+        pickUpTime: pu,
         image: img,
       })
       .then((res) => console.log(res))
@@ -64,6 +66,7 @@ export default function CreateListing() {
           id="phoneNumber"
           label="Phone Number"
         />
+        <TextField required className="fullName" id="pu" label="Pick Up Time" />
         <TextField
           required
           className="fullName"
